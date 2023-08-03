@@ -119,9 +119,15 @@ button:disabled {
 }
 
 .disabled {
-    filter: blur(10px);
+    filter: blur(5px);
     pointer-events: none; /* Makes the link unclickable */
 }
+
+img.disabled {
+    filter: grayscale(100%); /* convert to greyscale */
+    opacity: 0.75; /* semi-transparent */
+}
+
 
 .product img, .product video {
     width: 100%;
