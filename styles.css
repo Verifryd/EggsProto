@@ -1,0 +1,142 @@
+body {
+    background: linear-gradient(orange, yellow);
+    font-family: 'Rounds Black', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    flex: 1 0 100px;  /* Adjust the '200px' to whatever minimum width you want for your products */
+    margin: 10px;
+    min-height: 40vh; /* This makes sure the product element takes at least the full height of the viewport */
+    width: 100%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#rabbitHoleButton {
+    background-color: transparent;
+    color: darkgrey;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#indexPage {
+    background-color: white;
+    /* Other styles for the index page */
+}
+
+#homePage {
+    background: linear-gradient(orange, yellow);
+    /* Other styles for the home page */
+}
+
+#verifrydImage {
+    width: 150px;
+    height: auto;
+}
+
+#friedeggsImage {
+    width: 150px;
+    height: auto;
+}
+
+img {
+    max-width: 100%; /* This will make the image responsive, i.e., its maximum width will be 100% of its containing element */
+    height: auto; /* This will keep the image's aspect ratio intact */
+}
+
+button {
+  font-size: 3em; /* Adjust as needed */
+  padding: 10px 20px; /* Adjust as needed */
+  color: white; /* Adjust as needed */
+  background-color: orange; /* Adjust as needed */
+  border: 2 px;
+  border-radius: 5px; /* Adjust as needed */
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: red; /* Adjust as needed */
+}
+
+.backButton, .nextButton {
+    margin-top: 5px; /* Adjust this value as needed */
+}
+
+body.index {
+    background: #fff;
+}
+
+@media (max-width: 800px) {
+  #fabergeImage {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  #kringleImage {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  #dpteImage {
+    width: 50%;
+    height: auto;
+  }
+}
+
+#productVideo, #kringleproductVideo, #dpteproductVideo {
+    width: 400px;
+    height: auto;
+}
+
+button:disabled {
+    background-color: #cccccc; /* grey background */
+    color: #888888; /* darker grey text */
+}
+
+.disabled {
+    filter: blur(10px);
+    pointer-events: none; /* Makes the link unclickable */
+}
+
+.product img, .product video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
