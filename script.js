@@ -11,26 +11,6 @@ var kringleVideo = document.getElementById('kringleproductVideo');
 var dpteButton = document.getElementById('dptepurchaseButton');
 var dpteVideo = document.getElementById('dpteproductVideo');
 
-if (localStorage.getItem('fabergeProductViewed') && localStorage.getItem('kringleProductViewed') && localStorage.getItem('DPtEProductViewed')) {
-        document.getElementById('classifriedButton').disabled = false;
-    }
-};
-
-    // If the 'kringleProductViewed' flag is not set in localStorage, disable the link
-    if (!localStorage.getItem('kringleProductViewed')) {
-        document.getElementById('kringleLink').onclick = function(event) {
-            event.preventDefault();
-        }
-    }
-
-    // If the 'DPtEProductViewed' flag is not set in localStorage, disable the link
-    if (!localStorage.getItem('DPtEProductViewed')) {
-        document.getElementById('DPtELink').onclick = function(event) {
-            event.preventDefault();
-        }
-    }
-};
-
 if (fabergeButton && fabergeVideo) {
     fabergeButton.addEventListener('click', function() {
         document.getElementById('fabergeImage').style.display = 'none';
@@ -81,3 +61,18 @@ if (dpteButton && dpteVideo) {
         });
     });
 }
+
+    // If the 'kringleProductViewed' flag is not set in localStorage, disable the link
+    if (!localStorage.getItem('kringleProductViewed')) {
+        document.getElementById('kringleLink').onclick = function(event) {
+            event.preventDefault();
+        }
+    }
+
+    // If the 'DPtEProductViewed' flag is not set in localStorage, disable the link
+    if (!localStorage.getItem('DPtEProductViewed')) {
+        document.getElementById('DPtELink').onclick = function(event) {
+            event.preventDefault();
+        }
+    }
+};
