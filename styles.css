@@ -118,6 +118,16 @@ button:disabled {
     color: #888888; /* darker grey text */
 }
 
+img.disabled {
+    filter: grayscale(100%); /* convert to greyscale */
+    opacity: 0.5; /* semi-transparent */
+}
+
+.disabled {
+    filter: blur(10px);
+    pointer-events: none; /* Makes the link unclickable */
+}
+
 .product img, .product video {
     width: 100%;
     height: auto;
