@@ -123,15 +123,6 @@ button:disabled {
     pointer-events: none; /* Makes the link unclickable */
 }
 
-img.disabled {
-    filter: grayscale(100%); /* convert to greyscale */
-    opacity: 0.75; /* semi-transparent */
-}
-
-.disabled-gif {
-    opacity: 0.5;  /* Adjust to your liking */
-}
-
 .product img, .product video {
     width: 100%;
     height: auto;
