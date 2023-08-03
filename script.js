@@ -62,6 +62,11 @@ if (dpteButton && dpteVideo) {
     });
 }
 
+if (localStorage.getItem('fabergeProductViewed') && localStorage.getItem('kringleProductViewed') && localStorage.getItem('DPtEProductViewed')) {
+        document.getElementById('classifriedButton').disabled = false;
+    }
+};
+
     // If the 'kringleProductViewed' flag is not set in localStorage, disable the link
     if (!localStorage.getItem('kringleProductViewed')) {
         document.getElementById('kringleLink').onclick = function(event) {
