@@ -128,6 +128,9 @@ img.disabled {
     opacity: 0.75; /* semi-transparent */
 }
 
+.disabled-gif {
+    opacity: 0.5;  /* Adjust to your liking */
+}
 
 .product img, .product video {
     width: 100%;
