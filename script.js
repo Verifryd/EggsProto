@@ -81,10 +81,3 @@ if (dpteButton && dpteVideo) {
         });
     });
 }
-
-function checkClassifriedButton() {
-    // If all product videos have been viewed, enable the "Classifried" button
-    if (localStorage.getItem('fabergeProductViewed') && localStorage.getItem('kringleProductViewed') && localStorage.getItem('DPtEProductViewed')) {
-        document.getElementById('classifriedButton').disabled = false;
-    }
-}
