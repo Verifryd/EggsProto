@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack"
+    "start": "./node_modules/react-scripts/bin/react-scripts.js start"
   },
   "dependencies": {
     "gsap": "^3.12.2",
