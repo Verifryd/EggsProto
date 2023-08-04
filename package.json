@@ -6,7 +6,7 @@
     "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "build": "webpack"
+    "build": ".\\node_modules\\.bin\\webpack"
   },
   "dependencies": {
     "gsap": "^3.12.2",
