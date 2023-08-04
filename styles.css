@@ -96,28 +96,28 @@ body.index {
     background: #fff;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 800px) {
   #fabergeImage {
     width: auto;
     height: auto;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 800px) {
   #kringleImage {
     width: auto;
     height: auto;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 800px) {
   #dpteImage {
     width: auto;
     height: auto;
   }
 }
 
-#fabergeImage, #kringleproductVideo, #dpteproductVideo {
+#fabergeImage, #kringleImage, #dpteImage {
     width: auto;
     height: auto;
 }
