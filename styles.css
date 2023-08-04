@@ -17,7 +17,7 @@ body {
 }
 
 .product {
-    flex: 1 0 10px;  /* Adjust the '200px' to whatever minimum width you want for your products */
+    flex: 1 0 100px;  /* Adjust the '200px' to whatever minimum width you want for your products */
     margin: 10px;
     min-height: 40vh; /* This makes sure the product element takes at least the full height of the viewport */
     width: 100%;
@@ -52,15 +52,17 @@ body {
 #verifrydImage {
     width: 150px;
     height: auto;
+    justify-content: top;
 }
 
 #friedeggsImage {
     width: 150px;
     height: auto;
+    justify-content: top;
 }
 
 img {
-    max-width: 100%; /* This will make the image responsive, i.e., its maximum width will be 100% of its containing element */
+    max-width: auto; /* This will make the image responsive, i.e., its maximum width will be 100% of its containing element */
     height: auto; /* This will keep the image's aspect ratio intact */
 }
 
@@ -90,27 +92,27 @@ body.index {
 
 @media (max-width: 800px) {
   #fabergeImage {
-    width: 50%;
+    width: auto;
     height: auto;
   }
 }
 
 @media (max-width: 800px) {
   #kringleImage {
-    width: 50%;
+    width: auto;
     height: auto;
   }
 }
 
 @media (max-width: 800px) {
   #dpteImage {
-    width: 50%;
+    width: auto;
     height: auto;
   }
 }
 
 #productVideo, #kringleproductVideo, #dpteproductVideo {
-    width: 400px;
+    width: auto;
     height: auto;
 }
 
