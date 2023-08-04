@@ -6,7 +6,7 @@
     "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "build": "parcel build Eggsperience/src/script.js --out-dir dist"
+    "build": "webpack"
   },
   "dependencies": {
     "gsap": "^3.12.2",
@@ -15,6 +15,7 @@
     "three": "^0.155.0"
   }
 }
+
 
 
 
