@@ -121,19 +121,6 @@ button:disabled {
     color: #888888; /* darker grey text */
 }
 
-.product img, .product video {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-.product {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
 
 
 
