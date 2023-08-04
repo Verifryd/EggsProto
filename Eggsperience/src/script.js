@@ -1,17 +1,18 @@
 import './style.css'
-import * as THREE from 'https://threejs.org/build/three.module.js';
-import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls.js'
-import * as GUI from 'https://path.to/lil-gui.js';
-import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js'
-import { gsap } from 'https://path.to/gsap.js';
+import * as THREE from 'three'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import * as dat from 'lil-gui'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import gsap from "gsap";
 import { FilmPass } from '../static/utils/FilmPass.js';
-import { EffectComposer } from '../node_modules/three/examples/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from '../node_modules/three/examples/jsm/postprocessing/RenderPass.js';
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { GlitchPass } from '../static/utils/GlitchPass';
-import { UnrealBloomPass } from 'https://path.to/UnrealBloomPass.js';
-import { RGBELoader } from '../node_modules/three/examples/jsm/loaders/RGBELoader.js';
-import { ShaderPass } from '../node_modules/three/examples/jsm/postprocessing/ShaderPass'
-import * as Stats from 'https://your.cdn.com/path/to/stats.js';
+import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
+import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
+import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass'
+
+import Stats from 'stats.js'
 
 
 const darkMaterial = new THREE.MeshBasicMaterial( { color: 'black' } );
@@ -53,7 +54,6 @@ manager.onLoad = () => {
     enterButton.textContent = 'ENTER'
 }
 
-var container = document.getElementById('3d-scene');
 const enterButton = document.getElementById('enter-button')
 enterButton.addEventListener('click', () => {
     if (fullyLoaded) {
