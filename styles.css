@@ -17,10 +17,16 @@ body {
 }
 
 .product {
-    flex: 1 0 100px;  /* Adjust the '200px' to whatever minimum width you want for your products */
+    flex: 1 0 100px;
     margin: 10px;
-    min-height: 40vh; /* This makes sure the product element takes at least the full height of the viewport */
+    min-height: 40vh;
     width: auto;
+}
+
+@media screen and (max-width: 768px) { /* or any size you consider as a breakpoint for mobile */
+  .product {
+    width: 100%;
+  }
 }
 
 #content {
@@ -62,7 +68,7 @@ body {
 }
 
 img {
-    max-width: auto; /* This will make the image responsive, i.e., its maximum width will be 100% of its containing element */
+    max-width: 100%; /* This will make the image responsive, i.e., its maximum width will be 100% of its containing element */
     height: auto; /* This will keep the image's aspect ratio intact */
 }
 
