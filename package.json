@@ -1,24 +1,24 @@
 {
   "name": "friedeggsgit3",
   "version": "1.0.0",
-  "description": "\"# EggsProto\"",
-  "main": "script.js",
+  "description": "",
+  "main": "Eggsperience/src/script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+    "build": "webpack",
+    "start": "webpack"
+  }, // Missing comma added here
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "three": "^0.155.0"
-  },
   "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
-  }
-  "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2",
+    "lil-gui": "^0.18.2",
+    "stats.js": "^0.17.0",
+    "three": "^0.155.0"
   }
 }
