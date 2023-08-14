@@ -117,7 +117,7 @@ body.index {
   }
 }
 
-#productVideo. #dpteproductVideo, #kringleproductVideo {
+#productVideo {
     width: 400px;
     height: 400px;
   }
@@ -133,11 +133,6 @@ body.index {
     width: 400px;
     height: 400px;
   }
-}
-
-#fabergeImage, #kringleImage, #dpteImage {
-    width: auto;
-    height: auto;
 }
 
 button:disabled {
