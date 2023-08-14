@@ -96,10 +96,9 @@ body.index {
     background: #fff;
 }
 
-@media (max-width: 400px) {
-  #fabergeImage {
-    width: auto;
-    height: auto;
+#fabergeImage {
+    width: 400px;
+    height: 400px;
   }
 }
 
