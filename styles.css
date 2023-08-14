@@ -9,20 +9,6 @@ body {
     margin: 0;
 }
 
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-}
-
-.product {
-    flex: 1 0 100px;
-    margin: 10px;
-    min-height: 40vh;
-    width: auto;
-}
-
 @media screen and (max-width: 768px) { /* or any size you consider as a breakpoint for mobile */
   .product {
     width: 100%;
