@@ -117,22 +117,19 @@ body.index {
   }
 }
 
-@media (max-width: 800px) {
-   #productVideo {
+#productVideo {
     width: 400px;
     height: 400px;
   }
 }
 
-@media (max-width: 800px) {
-   #dpteproductVideo {
+#dpteproductVideo {
     width: 400px;
     height: 400px;
   }
 }
 
-@media (max-width: 800px) {
-   #kringleproductVideo {
+#kringleproductVideo {
     width: 400px;
     height: 400px;
   }
