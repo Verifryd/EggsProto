@@ -96,20 +96,21 @@ body.index {
     background: #fff;
 }
 
-#fabergeImage {
+@media (max-width: 400px) {
+  #fabergeImage {
     width: auto;
     height: auto;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
   #kringleImage {
     width: auto;
     height: auto;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
   #dpteImage {
     width: auto;
     height: auto;
