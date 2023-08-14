@@ -117,10 +117,9 @@ body.index {
   }
 }
 
-@media (max-width: 800px) {
-  #productVideo {
-    width: auto;
-    height: auto;
+#productVideo {
+    width: 400px;
+    height: 400px;
   }
 }
 #fabergeImage, #kringleImage, #dpteImage {
